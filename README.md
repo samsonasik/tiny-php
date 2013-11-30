@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zackkitzmiller/tiny-php.png?branch=master)](https://travis-ci.org/zackkitzmiller/tiny-php)
+
 # Tiny
 
 A reversible base62 ID obfuscater
