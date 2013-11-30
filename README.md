@@ -10,6 +10,18 @@ Originally by Jacob DeHart, with Ruby and Python ports by Kyle Bragger
 
 Now maintained by [Zack Kitzmiller](https://github.com/zackkitzmiller).
 
+## Installation
+
+Install via Composer
+
+```json
+{
+    "require": {
+        "zackkitzmiller/tiny": "1.0"
+    },
+}
+```
+
 ## Usage
 
 ```php
