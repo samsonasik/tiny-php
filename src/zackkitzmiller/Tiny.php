@@ -1,4 +1,4 @@
-<?php namespace zackkitzmiller;
+<?php namespace ZackKitzmiller;
 
 class Tiny {
 

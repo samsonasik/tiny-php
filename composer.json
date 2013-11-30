@@ -1,4 +1,3 @@
-
 {
     "name": "zackkitzmiller/tiny",
     "homepage": "http://github.com/zackkitzmiller/tiny-php",
@@ -23,6 +22,6 @@
         "phpunit/phpunit": "~3.7.0"
     },
     "autoload": {
-        "psr-0": {"zackkitzmiller": "src/"}
+        "psr-0": {"ZackKitzmiller": "src/"}
     }
 }
