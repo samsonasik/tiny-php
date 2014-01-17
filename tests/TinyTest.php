@@ -1,7 +1,8 @@
-<?php namespace ZackKitzmiller;
+<?php
 
-class TestCase extends \PHPUnit_Framework_TestCase {
+use ZackKitzmiller\Tiny;
 
+class TinyTest extends PHPUnit_Framework_TestCase {
     protected $tiny = null;
 
     public function setUp() {

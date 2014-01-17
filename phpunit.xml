@@ -3,7 +3,7 @@
 <phpunit colors="true" bootstrap="vendor/autoload.php">
     <testsuites>
         <testsuite name="Tiny Test Suite">
-            <directory>./tests/ZackKitzmiller/TestCase.php</directory>
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
