@@ -18,7 +18,7 @@ class TestCase extends \PHPUnit_Framework_TestCase {
         $this->assertEquals(5, $reversed);
     }
 
-    public function testReveringRandomInt() {
+    public function testReversingRandomInt() {
         for ($i = 0; $i <= 100; $i++) {
             $this->assertEquals($this->tiny->from($this->tiny->to($i)), $i);
         }
