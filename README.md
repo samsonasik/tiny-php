@@ -37,3 +37,14 @@ echo $tiny->from('E');
 ## Configuration
 
 You must instanciate a new instance of Tiny with a random alpha-numeric set. Do **NOT** change this once you start using Tiny, as you won't be able to reverse.
+
+## Using laravel?
+
+If you're using laravel and want to use a more laravel-like syntax you could use [this fork](https://github.com/golonka/tiny) which will allow you to use a syntax like this:
+```php
+echo Tiny::to(5);
+// echos E
+
+echo Tiny::from('E');
+// echos 5
+```
