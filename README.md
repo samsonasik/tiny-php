@@ -28,10 +28,10 @@ Install via Composer
 $tiny = new \ZackKitzmiller\Tiny('5SX0TEjkR1mLOw8Gvq2VyJxIFhgCAYidrclDWaM3so9bfzZpuUenKtP74QNH6B');
 
 echo $tiny->to(5);
-// echos E
+// E
 
 echo $tiny->from('E');
-// echos 5
+// 5
 ```
 
 ## Configuration
