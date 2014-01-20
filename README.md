@@ -40,7 +40,26 @@ You must instanciate a new instance of Tiny with a random alpha-numeric set. Do 
 
 ## Using laravel?
 
-If you're using laravel and want to use a more laravel-like syntax you could use [this fork](https://github.com/golonka/tiny) which will allow you to use a syntax like this:
+If you're using laravel and want to use a more laravel-like and cleaner suntax syntax you only have to follow these steps.
+
+First open your ``app/config/app.php`` file and scroll down to your providers and add
+```php
+'providers' => array(
+    ...
+    'ZackKitzmiller\TinyServiceProvider',
+)
+```
+and then this to aliases
+```php
+'aliases' => array(
+    ...
+    'Tiny' => 'ZackKitzmiller\Facades\Tiny',
+)
+```
+
+Lastly you run ``php artisan config:publish zackkitzmiller/tiny`` and fill in your key.
+
+### Usage in Laravel
 ```php
 echo Tiny::to(5);
 // echos E
