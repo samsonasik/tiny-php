@@ -40,7 +40,7 @@ You must instanciate a new instance of Tiny with a random alpha-numeric set. Do 
 
 ## Using laravel?
 
-If you're using laravel and want to use a more laravel-like and cleaner suntax syntax you only have to follow these steps.
+If you're using laravel and want to use a more laravel-like and cleaner syntax you only have to follow these steps.
 
 First open your ``app/config/app.php`` file and scroll down to your providers and add
 ```php
