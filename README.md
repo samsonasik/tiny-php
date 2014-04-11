@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/zackkitzmiller/tiny-php.png?branch=master)](https://travis-ci.org/zackkitzmiller/tiny-php)
+[![Coverage Status](https://coveralls.io/repos/zackkitzmiller/tiny-php/badge.png?branch=master)](https://coveralls.io/r/zackkitzmiller/tiny-php?branch=master)
 
 # Tiny
 
