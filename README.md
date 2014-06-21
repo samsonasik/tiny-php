@@ -39,6 +39,8 @@ echo $tiny->from('E');
 
 You must instanciate a new instance of Tiny with a random alpha-numeric set where each character must only be used exactly once. Do **NOT** change this once you start using Tiny, as you won't be able to reverse.
 
+You can generate a random set from the commandline with `$ ./bin/genset`
+
 ## Using laravel?
 
 If you're using laravel and want to use a more laravel-like and cleaner syntax you only have to follow these steps.
