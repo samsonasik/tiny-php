@@ -18,7 +18,7 @@ Install via Composer
 ```json
 {
     "require": {
-        "zackkitzmiller/tiny": "1.1.0"
+        "zackkitzmiller/tiny": "1.2.0"
     },
 }
 ```
