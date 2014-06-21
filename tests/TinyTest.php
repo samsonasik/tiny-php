@@ -3,6 +3,7 @@
 use ZackKitzmiller\Tiny;
 
 class TinyTest extends PHPUnit_Framework_TestCase {
+
     protected $tiny = null;
 
     public function setUp() {
@@ -22,6 +23,23 @@ class TinyTest extends PHPUnit_Framework_TestCase {
     public function testReversingRandomInt() {
         for ($i = 0; $i <= 100; $i++) {
             $this->assertEquals($this->tiny->from($this->tiny->to($i)), $i);
+        }
+    }
+
+    public function testGenerateRandomSetsWork() {
+        for ($i = 0; $i <= 1000; $i++) {
+            $tiny = new Tiny(Tiny::generate_key());
+            $this->assertEquals($tiny->from($tiny->to($i)), $i);
+        }
+    }
+
+    public function testGenerateSetUnique() {
+        $set = Tiny::generate_key();
+        $set_parts = str_split($set);
+        $used = array();
+        foreach ($set_parts as $char) {
+            $this->assertArrayNotHasKey($char, $used);
+            $used[$char] = $char;
         }
     }
 }
