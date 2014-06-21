@@ -39,4 +39,18 @@ class Tiny {
         return $n;
     }
 
+    public static function generate_key()
+    {
+        $arr = array();
+
+        for ($i = 65; $i <= 122; $i++) {
+            if ($i < 91 || $i > 96) $arr[] = chr($i);
+        }
+
+        $arr = array_merge($arr, range(0, 9));
+        shuffle($arr);
+
+        return join('', $arr);
+    }
+
 }

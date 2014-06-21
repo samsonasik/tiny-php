@@ -7,6 +7,13 @@ class TinyServiceProvider extends ServiceProvider {
     public function boot()
     {
         $this->package('zackkitzmiller/tiny', 'zackkitzmiller/tiny', __DIR__.'/../');
+
+        $this->app['tiny.generate'] = $this->app->share(function($app)
+        {
+            return new TinyGenerateCommand($app['files']);
+        });
+
+        $this->commands('tiny.generate');
     }
 
     public function register()

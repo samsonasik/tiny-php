@@ -37,7 +37,7 @@ echo $tiny->from('E');
 
 ## Configuration
 
-You must instanciate a new instance of Tiny with a random alpha-numeric set. Do **NOT** change this once you start using Tiny, as you won't be able to reverse.
+You must instanciate a new instance of Tiny with a random alpha-numeric set where each character must only be used exactly once. Do **NOT** change this once you start using Tiny, as you won't be able to reverse.
 
 ## Using laravel?
 
@@ -58,7 +58,7 @@ and then this to aliases
 )
 ```
 
-Lastly you run ``php artisan config:publish zackkitzmiller/tiny`` and fill in your key.
+Lastly you run ``php artisan config:publish zackkitzmiller/tiny`` to publish the configuration file and then run ``php artisan tiny:generate`` to create a valid key.
 
 ### Usage in Laravel
 ```php
