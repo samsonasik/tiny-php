@@ -28,13 +28,13 @@ class TinyTest extends PHPUnit_Framework_TestCase {
 
     public function testGenerateRandomSetsWork() {
         for ($i = 0; $i <= 1000; $i++) {
-            $tiny = new Tiny(Tiny::generate_key());
+            $tiny = new Tiny(Tiny::generate_set());
             $this->assertEquals($tiny->from($tiny->to($i)), $i);
         }
     }
 
     public function testGenerateSetUnique() {
-        $set = Tiny::generate_key();
+        $set = Tiny::generate_set();
         $set_parts = str_split($set);
         $used = array();
         foreach ($set_parts as $char) {

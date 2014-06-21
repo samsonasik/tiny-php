@@ -39,7 +39,7 @@ class Tiny {
         return $n;
     }
 
-    public static function generate_key()
+    public static function generate_set()
     {
         $arr = array();
 

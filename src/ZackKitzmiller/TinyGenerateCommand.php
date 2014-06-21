@@ -20,7 +20,7 @@ class TinyGenerateCommand extends Command {
     {
         list($path, $contents) = $this->getKeyFile();
 
-        $key = Tiny::generate_key();
+        $key = Tiny::generate_set();
 
         $contents = str_replace($this->laravel['config']['zackkitzmiller/tiny::key'], $key, $contents);
 
