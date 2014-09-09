@@ -33,6 +33,19 @@ echo $tiny->to(5);
 
 echo $tiny->from('E');
 // 5
+
+echo $tiny->to(126);
+// XX
+
+echo $tiny->from('XX');
+// 126
+
+echo $tiny->to(999);
+// vk
+
+echo $tiny->from('vk');
+// 999
+
 ```
 
 ## Configuration
@@ -64,8 +77,8 @@ Lastly you run ``php artisan config:publish zackkitzmiller/tiny`` to publish the
 
 ### Usage in Laravel
 ```php
-echo Tiny::to(5);
-// echos E
+echo Tiny::to(999);
+// echos vk
 
 echo Tiny::from('E');
 // echos 5
